@@ -1,0 +1,171 @@
+/* header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    color: rgb(0, 0, 0);
+    z-index: 20;
+    background-color: white;
+}
+
+#header {
+    padding: 10%;
+}
+
+#logo img {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    float: left;
+}
+
+.logo-text {
+    margin-left: 3em;
+}
+
+.logo-text a {
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+}
+
+.logo-text a p {
+    margin: 0;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+}
+
+#menu-btn {
+    width: 3.5em;
+    height: 1em;
+    position: fixed;
+    top: 5%;
+    right: 10%;
+    z-index: 100;
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    display: block;
+    margin-top: 35%;
+}
+
+.menu-btn span::before {
+    width: 100%;
+    height: 1px;
+    background: rgb(0, 0, 0);
+    display: block;
+    position: absolute;
+    bottom: 35%;
+    content: '';
+    cursor: pointer;
+}
+
+/* main */
+body {
+    font-family: 'Cormorant', serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile {
+    position: absolute;
+    right: 11%;
+    top: 14%;
+    left: 11%;
+    margin: auto;
+    width: 80%;
+    height: 110%;
+    z-index: 10;
+}
+
+.profile-img {
+    width: 80%;
+    height: 70%;
+    position: fixed;
+    z-index: 10;
+    top: 20%;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    background-color: rgba(255, 255, 255, 0.977);
+}
+
+.profile-Introduction span {
+    color: rgb(87, 87, 87);
+    font-size: 0.8em;
+}
+
+.profile-Introduction dt p {
+    font-size: 1.1em;
+}
+
+.profile-Introduction dd {
+    margin: 0;
+}
+
+.profile-Introduction dd p {
+    font-size: 0.9em;
+    margin: 1em 0;
+}
+
+.profile-Introduction dd p a {
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+}
+
+/* profile-link */
+
+.profile-link-item {
+    width: 100%;
+    height: 20%;
+    margin: 80px 0;
+    font-size: 0.9em;
+}
+
+h3 {
+    font-size: 1em;
+    color: rgb(133, 133, 133);
+    width: 100%;
+}
+
+.profile-mail a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile-social ul li {
+    list-style: none;
+    float: left;
+}
+
+.profile-social ul span {
+    margin: 0 1em;
+}
+
+.profile-social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-social ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile-credit a {
+    text-decoration: none;
+    color: black;
+}
