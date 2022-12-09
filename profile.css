@@ -61,12 +61,12 @@ header {
 /* menu-btn */
 
 .menu-btn {
-    width: 3.5em;
-    height: 2em;
+    width: 2.5em;
+    height: 1.5em;
     /* background-color: aqua; */
     position: absolute;
     right: 10%;
-    top: 5vh;
+    top: 6vh;
 }
 
 .menu-btn span {
