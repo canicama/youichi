@@ -48,31 +48,28 @@ header {
     display: block;
 }
 
-.logo-text a p {
+h1 {
     margin: 0;
-    font-size: 0.5em;
-    letter-spacing: 0.2em;
-}
-
-.logo-text-p2 {
-    padding-top: 0.3em;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
 }
 
 /* menu-btn */
 
 .menu-btn {
     width: 2.5em;
-    height: 1.5em;
+    height: 1.7em;
     /* background-color: aqua; */
     position: absolute;
     right: 10%;
-    top: 6vh;
+    /* top: 6vh; */
+    padding-top: 0.5em;
 }
 
 .menu-btn span {
     width: 100%;
-    height: 1px;
-    background-color: rgb(0, 0, 0);
+    height: 0.6px;
+    background-color: rgb(112, 112, 112);
     display: block;
     margin-top: 18%;
 }
@@ -80,7 +77,7 @@ header {
 .menu-btn span::before {
     width: 100%;
     height: 1px;
-    background: rgb(0, 0, 0);
+    background-color: rgb(112, 112, 112);
     display: block;
     position: absolute;
     bottom: 40%;
