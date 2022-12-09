@@ -8,6 +8,9 @@
     <title>Profile | YouichiOfficial</title>
     <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="navi.css">
+    <!-- ScrollTrigger JSライブラリ-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.3/ScrollTrigger.min.js"></script>
 </head>
 
 <body>
@@ -18,14 +21,59 @@
                 <div></div>
                 <div class="logo-text">
                     <a href="top.html">
-                        <p>YOUICHI</p>
-                        <p>OFFICIAL</p>
+                        <div class="logo-text-p2">
+                            <p>YOUICHI</p>
+                            <p>OFFICIAL</p>
+                        </div>
                     </a>
                 </div>
             </div>
-            <div id="menu-btn" class="menu-btn">
+
+            <div class="menu-btn">
                 <span></span>
             </div>
+
+            <!--
+            <div id="menu-btn" class="menu-btn">
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input">
+                        <div class="navi_wrap">
+                            <div class="navi_title">
+                                <p>YOUICHI OFFICIAL</p>
+                            </div>
+                            <div class="navi_left">
+                                <ul class="contents">
+                                    <li><a href="about.html">ABOUT</a></li>
+                                    <li><a href="works.html">WORKS</a></li>
+                                    <li><a href="gallery.html">GALLERY</a></li>
+                                    <li><a href="contact02.html">CONTACT</a></li>
+                                </ul>
+                            </div>
+                            <div class="navi_right">
+                                <div class="contents">
+                                    <div class="navi_mail">
+                                        <a href="">wowo.oe.aiyiy@gmail.com</a>
+                                    </div>
+                                    <div class="sns_list">
+                                        <ul>
+                                            <li><a href=""><i class="fa-brands fa-twitter"></i>twitter</a></li>
+                                            <li><a href=""><i class="fa-brands fa-instagram"></i>instagram</a></li>
+                                            <li><a href=""><i class="fa-solid fa-p"
+                                                        style="    margin-left: 1.9px;"></i>pixiv</a>
+                                            </li>
+                                            <li><a href=""><i class="fa-solid fa-s"></i>skeb</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                -->
+        </div>
         </div>
     </header>
 
@@ -33,10 +81,10 @@
         <div class="profile">
 
             <div class="profile-img">
-                <img src="images/profile-image.PNG" alt="プロフィール画像">
+                <img data-trigger="" class="blurAnime" src="images/profile-image.PNG" alt="プロフィール画像">
             </div>
 
-            <article class="profile-text">
+            <article class="profile-text" id="p">
 
                 <section class="profile-Introduction">
                     <dl>
@@ -57,7 +105,7 @@
                 <section class="profile-link">
                     <div class="profile-link-item profile-mail">
                         <h3>Mail</h3>
-                        <a href="wowo.oe.aiyiy@gmail.com">wowo.oe.aiyiy@gmail.com</a>
+                        <a href="mailto:wowo.oe.aiyiy@gmail.com">wowo.oe.aiyiy@gmail.com</a>
                     </div>
                     <div class="profile-link-item profile-social">
                         <h3>Social</h3>
@@ -84,6 +132,14 @@
     </main>
 
     <footer></footer>
+
+
+
+    <script>
+        const trigger = new ScrollTrigger.default()
+        trigger.add('[data-trigger]')
+    </script>
+
 </body>
 
 </html>

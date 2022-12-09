@@ -1,0 +1,96 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant', serif;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+    display: inline-block;
+    width: 50px;
+    height: 11px;
+    padding: 20px 10px;
+    background-color: blue;
+}
+
+#nav-drawer {
+
+    /*
+    position: fixed;
+    right: 10%;
+    top: 4%;
+    */
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+    display: none;
+}
+
+/*チェックがついたら表示させる*/
+#nav-input:checked~#nav-close {
+    display: block;
+    opacity: .8;
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: white;
+    width: 100%;
+    height: 100%;
+    animation: taadaa 1s forwards;
+}
+
+#nav-input:checked~#nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+}
+
+.header-logo-menu {
+    position: fixed;
+    top: 80px;
+    right: 90px;
+    z-index: 100;
+}
+
+@keyframes taadaa {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*ハンバーガーの形をCSSで表現*/
+
+/*
+#nav-open span {
+    position: absolute;
+    height: 0.5px;
+    width: 40px;
+    background: rgb(0, 0, 0);
+    display: block;
+    content: '';
+    cursor: pointer;
+    z-index: 100;
+    right: 10%;
+    top: 70%;
+}
+
+#nav-open span:before {
+    bottom: -10px;
+    position: absolute;
+    height: 0.5px;
+    width: 40px;
+    background: rgb(0, 0, 0);
+    display: block;
+    content: '';
+    cursor: pointer;
+    z-index: 100;
+    right: 0;
+}
+*/
