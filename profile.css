@@ -54,6 +54,12 @@ h1 {
     letter-spacing: 0.1em;
 }
 
+.h1 {
+    margin: 0;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+}
+
 /* menu-btn */
 
 .menu-btn {
