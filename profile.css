@@ -1,5 +1,6 @@
 html,
 body {
+    font-family: 'Cormorant', serif;
     background-color: rgb(236, 236, 236);
 }
 
@@ -118,10 +119,6 @@ header {
 */
 
 /* main */
-body {
-    font-family: 'Cormorant', serif;
-    background-color: rgb(255, 255, 255);
-}
 
 .profile {
     position: absolute;
@@ -168,7 +165,23 @@ body {
 }
 */
 
+.profile-text-top01 {
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(236, 236, 236, 0.766));
+    position: absolute;
+    z-index: 20;
+    top: 70%;
+}
 
+.profile-text-top02 {
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(rgba(236, 236, 236, 0.766), rgba(236, 236, 236, 0.953));
+    position: absolute;
+    z-index: 20;
+    top: 85%;
+}
 
 .profile-text {
     width: 100%;
@@ -176,8 +189,7 @@ body {
     position: absolute;
     z-index: 20;
     top: 100%;
-    background-color: rgba(255, 255, 255, 0.49);
-    padding-top: 3em;
+    background-color: rgba(236, 236, 236, 0.953);
 }
 
 .profile-Introduction span {
