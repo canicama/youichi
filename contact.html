@@ -5,127 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact| YouichiOfficial</title>
+    <title>contact | Youichi Official Site</title>
     <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="Normalize.css">
-    <link rel="stylesheet" href="navi.css">
-    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/116de4d270.js" crossorigin="anonymous"></script>
-    <!-- google fonts - Playfair Display -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+    <!--
     <header>
-        <div id="header">
-            <div id="logo">
-                <img src="" alt="">
-                <div></div>
-                <div class="logo-text">
-                    <a href="top.html">
-                        <h1>
-                            <p>CONTACT</p>
-                        </h1>
-                    </a>
-                </div>
-            </div>
-
-            <div class="menu-btn">
-                <div id="nav-drawer">
-                    <span></span>
-                </div>
-            </div>
-
+        <div class="title" id="head">
+            <p>
+                <a href="#">よういち <br>
+                    <span>Official Site</span>
+                </a>
+            </p>
         </div>
+        <div class="head" id="head">
+            <ul>
+                <li><a href="about.html">about</a></li>
+                <li><a href="works.html">works</a></li>
+                <li><a href="gallery.html">gallery</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
         </div>
     </header>
+    -->
 
     <main>
-        <div class="contact-wrap">
 
-            <div class="contact_form top_space">
-                <div class="contact_form_attention">
-                    <p>お仕事のご依頼やお問合せは下記のフォームもしくはメールアドレスよりご連絡をお願いいたします。</p>
-                    <p>ご返答にはお時間をいただく場合がございますので、ご了承のほどお願い申し上げます。</p>
-                    <span>
-                        が付いている項目は必須項目になります。
-                    </span>
-                </div>
-
-                <div class="contact-mail">
-                    <a href="mailto:wowo.oe.aiyiy@gmail.com">
-                        <!-- <i class="fa-regular fa-envelope"></i>-->MAIL | wowo.oe.aiyiy@gmail.com
-                    </a>
-                </div>
-
-                <div class="form-wrap">
-                    <form action="/form.php" method="post" class="form">
-                        <div id="form-list">
-                            <div class="form_label">
-                                <label for="name" class="form_item_text required">お名前</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="text" id="name" name="name" class="form_text" placeholder="名前を入力して下さい">
-                            </div>
-                        </div>
-                        <div id="form-list">
-                            <div class="form_label">
-                                <label for="email" class="form_item_text required">メールアドレス</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="email" id="email" name="email" class="form_text"
-                                    placeholder="メールアドレスを入力して下さい">
-                            </div>
-                        </div>
-                        <div id="form-list">
-                            <div class="form_label">
-                                <label for="subject" class="form_item_text">件名</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="text" id="subject" name="subject" class="form_text"
-                                    placeholder="件名を入力して下さい">
-                            </div>
-                        </div>
-                        <div id="form-list">
-                            <div class="form_label">
-                                <label for="message" class="form_item_text required">お問合せ内容</label>
-                            </div>
-                            <div class="form_input">
-                                <textarea id="message" name="message" class="form_text"
-                                    placeholder="お問合せ内容を入力して下さい"></textarea>
-                            </div>
-                        </div>
-                        <div id="form_list">
-                            <div class="form_label">
-                                <label for="file" class="form_item_textB">添付ファイル</label>
-                            </div>
-                            <div class="form_input file_css">
-                                <input class="file_button" type="file" name="example" accept=".png, .jpg, .jpeg, .pdf">
-                            </div>
-                        </div>
-                        <div id="form_list">
-                            <div class="form_label">
-                                <label for="date" class="form_item_textB">納期</label>
-                            </div>
-                            <div class="form_input">
-                                <input type="date" id="date" name="date" class="form_text">
-                            </div>
-                        </div>
-
-                        <div class="form-button">
-                            <input type="submit" value="送信" id="form_button" class="form_butoon_css">
-                        </div>
-
-                </div>
-            </div>
+        <div class="contact_title">
+            <p>CONTACT</p>
+            <a href="mailto:wowo.oe.aiyiy@gmail.com"><i class="fa-regular fa-envelope"></i>wowo.oe.aiyiy@gmail.com</a>
         </div>
+        </div>
+
+
+        <div class="form_wrap">
+            <form action="/form.php" method="post" class="form">
+                <div id="form_list">
+                    <label for="name" class="form_item_text">お名前</label>
+                    <input type="text" id="name" name="name" class="form_text" placeholder="名前を入力して下さい">
+                </div>
+                <div id="form_list">
+                    <label for="email" class="form_item_text">メールアドレス</label>
+                    <input type="email" id="email" name="email" class="form_text" placeholder="メールアドレスを入力して下さい">
+                </div>
+                <div id="form_list">
+                    <label for="message" class="form_item_text">お問合せ内容</label>
+                    <textarea id="message" name="message" class="form_text" placeholder="お問合せ内容を入力して下さい"></textarea>
+                </div>
+                <div id="form_list">
+                    <label for="file" class="form_item_textB">添付ファイル</label>
+                    <input class="file_button" type="file" name="example" accept=".png, .jpg, .jpeg, .pdf">
+                </div>
+                <div id="form_list">
+                    <label for="date" class="form_item_textB">納期</label>
+                    <input type="date" id="date" name="date" class="form_text">
+                </div>
+
+                <div class="form_button">
+                    <input type="submit" value="送信" id="form_button" class="form_butoon_css">
+                </div>
+        </div>
+
+
+
     </main>
 
-    <footer></footer>
 
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </body>
 
 </html>
