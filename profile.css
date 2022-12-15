@@ -2,7 +2,10 @@ html,
 body {
     font-family: 'Cormorant', serif;
     background-color: rgb(236, 236, 236);
+
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
 
 /* header */
 header {
@@ -68,7 +71,7 @@ h1 {
 
 .menu-btn span {
     width: 100%;
-    height: 0.6px;
+    height: 1px;
     background-color: rgb(112, 112, 112);
     display: block;
     margin-top: 18%;
@@ -116,6 +119,34 @@ h1 {
 */
 
 /* main */
+.profile-text-job {}
+
+.job-Illustrator {
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    font-size: 2.5em;
+    /* color: white; */
+    z-index: 1000;
+}
+
+.job-CharacterDesigner {
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    font-size: 2.1em;
+}
+
+
+
+.scroll {
+    position: absolute;
+    bottom: 30%;
+    right: 0;
+    left: 0;
+    /* margin: auto; */
+    text-align: center;
+}
 
 .profile {
     position: absolute;
@@ -129,11 +160,11 @@ h1 {
 }
 
 .profile-img {
-    width: 70%;
-    height: 60%;
+    width: 80%;
+    height: 70%;
     position: fixed;
     z-index: 10;
-    top: 20%;
+    bottom: 0%;
     margin: auto;
     right: 0;
     left: 0;
@@ -185,13 +216,23 @@ h1 {
     height: 15%;
     background: linear-gradient(rgba(236, 236, 236, 0.766), rgba(236, 236, 236, 0.953));
     position: absolute;
+    z-index: 1000;
+    bottom: 0%;
+}
+
+.profile-text-top03 {
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(rgba(236, 236, 236, 0.766), rgba(236, 236, 236, 0.953));
+    mix-blend-mode: screen;
+    position: absolute;
     z-index: 20;
     top: 85%;
 }
 
 .profile-text {
     width: 100%;
-    height: 100%;
+    height: 120%;
     position: absolute;
     z-index: 20;
     top: 100%;
