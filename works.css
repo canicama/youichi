@@ -110,21 +110,15 @@ h1 {
     left: 10%;
 }
 
-.works-year2022 {
-    position: absolute;
-    top: 19%;
-    left: 10%;
-    font-size: 1.5em;
-}
-
 .works-year {
-    font-size: 1.5em;
-    margin: 0.5em 0;
+    font-size: 4em;
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
 }
 
 .works-list {
     position: absolute;
-    top: 21vh;
+    top: 8vh;
     left: -10%;
     right: 0;
     margin: auto;
