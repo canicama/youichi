@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: 'Cormorant', serif;
+    font-family: 'Marcellus', serif;
     background-color: rgb(243, 243, 243);
 
 }
@@ -17,11 +17,11 @@ header {
 }
 
 #header {
-    margin: 10%;
+    margin: auto;
     width: 80%;
-    height: 45%;
-    /* background: yellow; */
+    height: 40%;
     display: flex;
+    padding: 5vh 10%;
 }
 
 #logo {
@@ -41,6 +41,8 @@ header {
 
 .logo-text {
     margin-left: 2.3em;
+    position: relative;
+    bottom: 0.1em;
 }
 
 .logo-text a {
@@ -51,9 +53,10 @@ header {
 }
 
 h1 {
-    margin: 0;
-    font-size: 0.6em;
+    font-size: 0.7em;
     letter-spacing: 0.1em;
+    font-family: 'Marcellus', serif;
+    color: rgb(0, 0, 0);
 }
 
 /* menu-btn */
@@ -118,7 +121,7 @@ h1 {
 
 .works-list {
     position: absolute;
-    top: 8vh;
+    top: 20vh;
     left: -10%;
     right: 0;
     margin: auto;

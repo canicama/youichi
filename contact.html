@@ -8,7 +8,7 @@
     <title>CONTACT | YouichiOfficial</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="Normalize.css">
-    <link rel="stylesheet" href="navi.css">
+    <link rel="stylesheet" href="navi02.css">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/116de4d270.js" crossorigin="anonymous"></script>
     <!-- google fonts - Playfair Display -->
@@ -20,29 +20,60 @@
 <body>
 
     <header>
+
         <div id="header">
             <div id="logo">
-                <img src="" alt="">
-                <div></div>
-                <div class="logo-text">
-                    <a href="top.html">
-                        <h1>
-                            <p>CONTACT</p>
-                        </h1>
-                    </a>
-                </div>
+                <a href="top.html">
+                    <img src="" alt="">
+                </a>
             </div>
 
-            <div class="menu-btn">
-                <div id="nav-drawer">
-                    <span></span>
-                </div>
+            <div class="logo-text">
+                <h1>
+                    <p>Contact</p>
+                </h1>
             </div>
-
         </div>
+
+
+        <div class="header-logo-menu">
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input">
+                    <nav id="nav-content">
+                        <div class="navi-box">
+                            <div class="navi-menu">
+                                <ul>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="works.html">Works</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="navi_right">
+                                <div class="navi-mail"><a href="mailto:wowo.oe.aiyiy@gmail.com"><i
+                                            class="fa-solid fa-envelope"></i>wowo.oe.aiyiy@gmail.com</a></div>
+                                <div class="navi-sns-list">
+                                    <ul>
+                                        <li><a href="https://twitter.com/wowo_oe_aiyiy_"><i
+                                                    class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href="https://www.instagram.com/wowo_oe_aiyiy_/"><i
+                                                    class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://www.pixiv.net/users/10334046"><i class="fa-solid fa-p"
+                                                    style="    margin-left: 1.9px;"></i></a>
+                                        </li>
+                                        <li><a href=""><i class="fa-solid fa-pen"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </label>
+            </div>
         </div>
     </header>
-
     <main>
         <div class="contact-wrap">
 
@@ -50,15 +81,14 @@
                 <div class="contact_form_attention">
                     <p>お仕事のご依頼やお問合せは下記のフォームもしくはメールアドレスよりご連絡をお願いいたします。</p>
                     <p>ご返答にはお時間をいただく場合がございますので、ご了承のほどお願い申し上げます。</p>
+                    <div class="contact-mail">
+                        <a href="mailto:wowo.oe.aiyiy@gmail.com">
+                            <!-- <i class="fa-regular fa-envelope"></i>-->MAIL | wowo.oe.aiyiy@gmail.com
+                        </a>
+                    </div>
                     <span>
                         が付いている項目は必須項目になります。
                     </span>
-                </div>
-
-                <div class="contact-mail">
-                    <a href="mailto:wowo.oe.aiyiy@gmail.com">
-                        <!-- <i class="fa-regular fa-envelope"></i>-->MAIL | wowo.oe.aiyiy@gmail.com
-                    </a>
                 </div>
 
                 <div class="form-wrap">
@@ -68,7 +98,7 @@
                                 <label for="name" class="form_item_text required">お名前</label>
                             </div>
                             <div class="form_input">
-                                <input type="text" id="name" name="name" class="form-text" placeholder="名前を入力して下さい">
+                                <input type="text" id="name" name="name" class="form-text" placeholder="よういち">
                             </div>
                         </div>
                         <div id="form-list">
@@ -77,7 +107,7 @@
                             </div>
                             <div class="form_input">
                                 <input type="email" id="email" name="email" class="form-text"
-                                    placeholder="メールアドレスを入力して下さい">
+                                    placeholder="xxxxxxx@email.com">
                             </div>
                         </div>
                         <div id="form-list">
@@ -86,7 +116,7 @@
                             </div>
                             <div class="form_input">
                                 <input type="text" id="subject" name="subject" class="form-text"
-                                    placeholder="件名を入力して下さい">
+                                    placeholder="楽曲イラストのご依頼について">
                             </div>
                         </div>
                         <div id="form-list">
@@ -94,8 +124,7 @@
                                 <label for="message" class="form_item_text required">お問合せ内容</label>
                             </div>
                             <div class="form_input">
-                                <textarea id="message" name="message" class="form-text"
-                                    placeholder="お問合せ内容を入力して下さい"></textarea>
+                                <textarea id="message" name="message" class="form-text" placeholder=""></textarea>
                             </div>
                         </div>
                         <div id="form-list">

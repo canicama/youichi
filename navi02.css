@@ -143,11 +143,17 @@ body {
     right: 0;
     margin: auto;
     width: 70%;
+    width: 100%;
 }
 
 .navi-mail a {
     text-decoration: none;
     color: black;
+    display: block;
+    text-align: center;
+    margin-top: 6em;
+    padding: 0.5em;
+    margin-bottom: 4em;
 }
 
 .navi-mail a i {
@@ -171,9 +177,15 @@ body {
     color: black;
 }
 
+/*
 .navi-sns-list {
     position: absolute;
     bottom: 5%;
+}
+*/
+.navi-sns-list {
+    width: 90%;
+    margin: auto;
 }
 
 .navi-sns-list ul {
@@ -187,14 +199,16 @@ body {
 
 .navi-sns-list ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(116, 116, 116);
     padding: 0.3em 0;
     display: block;
     margin: 1em;
 }
 
 .navi-sns-list ul li a i {
-    margin-right: 0.5em;
+    font-size: 1.2em;
+    margin: 0.5em;
+    display: block;
 }
 
 /* profile navi css */
