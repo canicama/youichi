@@ -134,7 +134,7 @@ body {
     position: absolute;
     left: 0;
     right: 0;
-    top: 15vh;
+    top: 25vh;
 }
 
 .navi-mail {
@@ -150,10 +150,9 @@ body {
     text-decoration: none;
     color: black;
     display: block;
-    text-align: center;
-    margin-top: 4em;
-    padding: 0.5em;
-    margin-bottom: 2em;
+    margin-top: 1em;
+    padding: 0.5em 0;
+    margin-bottom: 4em;
 }
 
 .navi-mail a i {
@@ -166,11 +165,38 @@ body {
 
 .navi-menu ul li {
     list-style: none;
-    text-align: center;
-    margin: 1.5em 0;
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: 0.1em;
+    width: 100%;
+    height: 1em;
 }
+
+.navi-hide-top {
+    margin: 0.5em 0;
+}
+
+.navi-hide-bottom {
+    background-color: white;
+    transform: translateY(-50%);
+    animation: navi-hide_anim 3s linear forwards;
+}
+
+.navi-hide-botom::before {
+    width: 100%;
+    height: 3em;
+    position: absolute;
+}
+
+@keyframes navi-hide_anim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
 
 .fa-p {
     padding: 0 0.3em;
@@ -189,7 +215,8 @@ body {
 */
 .navi-sns-list {
     width: 90%;
-    margin: auto;
+    position: relative;
+    left: -0.6em;
 }
 
 .navi-sns-list ul {
@@ -204,9 +231,8 @@ body {
 .navi-sns-list ul li a {
     text-decoration: none;
     color: rgb(116, 116, 116);
-    padding: 0.3em 0;
     display: block;
-    margin: 1em;
+    margin-right: 1em;
 }
 
 .navi-sns-list ul li a i {
@@ -239,6 +265,7 @@ header {
     position: absolute;
     left: 10%;
     top: 5vh;
+    z-index: 1000;
 }
 
 #logo img {
