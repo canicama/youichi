@@ -35,6 +35,31 @@ body {
 }
 
 /* main */
+/* category */
+.category {
+    position: absolute;
+    top: 12%;
+    font-family: 'Marcellus', serif;
+    float: left;
+    width: 80%;
+    height: 2em;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.category ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category ul li {
+    list-style: none;
+    font-size: 0.8em;
+    margin-right: 2em;
+}
+
 /* gallery_title　*/
 
 .gallery_title {
@@ -70,7 +95,7 @@ body {
     position: absolute;
     width: 80%;
     margin: auto;
-    top: 10vh;
+    top: 15vh;
 }
 
 /* clear fix */
@@ -94,6 +119,7 @@ body {
 .grid-item img {
     display: block;
     max-width: 100%;
+    object-fit: contain;
 }
 
 /* ズームイン */
@@ -115,4 +141,37 @@ body {
     -webkit-transform: scale(1.3);
     transform: scale(1.2);
     mix-blend-mode: multiply;
+}
+
+@media screen and (min-width: 950px) {
+    .works-list {
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+    }
+
+    .works-list ul li {
+        list-style: none;
+        display: block;
+        width: 47%;
+        height: 45vh;
+        float: left;
+        margin: 2em 1em;
+    }
+
+    .works-img {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .works-list ul li a p {
+        font-size: 1.3em;
+    }
+
+    .works-list ul li a span {
+        font-size: 1.2em;
+    }
 }
