@@ -126,7 +126,7 @@ body {
 #sample a {
     overflow: hidden;
     display: block;
-    margin: 0.5em;
+    padding: 0.5em;
 }
 
 #sample img.sample_img {
