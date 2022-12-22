@@ -1,0 +1,46 @@
+/* CSS */
+#sample figure {
+    margin: 0;
+    display: none;
+}
+
+#sample figure:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#sample figure:target #overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    color: inherit;
+}
+
+#sample figure:target img {
+    animation: fadein .3s;
+}
+
+@keyframes fadein {
+    0% {
+
+        opacity: 0.2;
+    }
+
+    100% {
+
+        opacity: 1;
+    }
+}

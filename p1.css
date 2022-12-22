@@ -1,0 +1,29 @@
+.box1 {
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 10;
+}
+
+/* blur */
+.blurAnime.visible {
+    animation: blurAnime 0.7s ease 0s 1 reverse;
+}
+
+@keyframes blurAnime {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(20px);
+    }
+}
+
+.blurAnime {}
+
+.box2 {
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+}

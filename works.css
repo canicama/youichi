@@ -134,11 +134,12 @@ h1 {
 
 .works-list ul li {
     list-style: none;
+    display: contents;
+}
+
+.works-list-li {
     width: 100%;
     height: 7vh;
-    background-color: rgba(255, 228, 196, 0.261);
-    display: contents;
-    margin: 1em 0;
 }
 
 .works-list ul li a {
@@ -179,6 +180,10 @@ h1 {
     */
 }
 
+.works-text {
+    margin: 1em 0;
+}
+
 .works-text p {
     width: 50%;
     margin: 0;
@@ -188,4 +193,37 @@ h1 {
 .right {
     text-align: right;
     display: block;
+}
+
+@media screen and (min-width: 950px) {
+    .works-list {
+        position: absolute;
+        top: 20vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+    }
+
+    .works-list ul li {
+        list-style: none;
+        display: block;
+        width: 47%;
+        height: 45vh;
+        float: left;
+        margin: 2em 1em;
+    }
+
+    .works-img {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .works-list ul li a p {
+        font-size: 1.3em;
+    }
+
+    .works-list ul li a span {
+        font-size: 1.2em;
+    }
 }

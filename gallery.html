@@ -5,74 +5,318 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery| YouichiOfficial</title>
+    <title>gallery | Youichi Official Site</title>
     <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="p5.css">
     <link rel="stylesheet" href="navi02.css">
+    <!-- google fonts - Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/116de4d270.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
 
-        <div id="header">
-            <div id="logo">
-                <a href="top.html">
-                    <img src="" alt="">
-                </a>
-            </div>
-
-            <div class="logo-text">
-                <h1>
-                    <p>Gallery</p>
-                </h1>
-            </div>
+        <div class="title" id="head">
+            <a href="home.html">
+                <div class="logo"></div>
+                <div class="title_text">
+                    <p>
+                        YOUICHI<br>
+                        OFFICIAL
+                    </p>
+                </div>
+            </a>
         </div>
-
 
         <div class="header-logo-menu">
             <div id="nav-drawer">
                 <input id="nav-input" type="checkbox" class="nav-unshown">
                 <label id="nav-open" for="nav-input"><span></span></label>
                 <label class="nav-unshown" id="nav-close" for="nav-input">
-                    <nav id="nav-content">
-                        <div class="navi-box">
-                            <div class="navi-menu">
-                                <ul>
-                                    <li class="navi-hide-top"><a href="profile.html">Profile</a></li>
-                                    <li class="navi-hide-botom"></li>
-                                    <li class="navi-hide-top"><a href="works.html">Works</a></li>
-                                    <li class="navi-hide-botom"></li>
-                                    <li class="navi-hide-top"><a href="gallery.html">Gallery</a></li>
-                                    <li class="navi-hide-botom"></li>
-                                    <li class="navi-hide-top"><a href="contact.html">Contact</a></li>
-                                    <li class="navi-hide-botom"></li>
-                                </ul>
-                            </div>
-
-                            <div class="navi_right">
-                                <div class="navi-mail"><a href="mailto:wowo.oe.aiyiy@gmail.com"><i
-                                            class="fa-solid fa-envelope"></i>wowo.oe.aiyiy@gmail.com</a></div>
-                                <div class="navi-sns-list">
+                    <div class="navi_wrap">
+                        <div class="navi_title">
+                            <p>YOUICHI OFFICIAL</p>
+                        </div>
+                        <div class="navi_left">
+                            <ul class="contents">
+                                <li><a href="about.html">ABOUT</a></li>
+                                <li><a href="works.html">WORKS</a></li>
+                                <li><a href="gallery.html">GALLERY</a></li>
+                                <li><a href="contact02.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="navi_right">
+                            <div class="contents">
+                                <div class="navi_mail">
+                                    <a href="">wowo.oe.aiyiy@gmail.com</a>
+                                </div>
+                                <div class="sns_list">
                                     <ul>
-                                        <li><a href="https://twitter.com/wowo_oe_aiyiy_"><i
-                                                    class="fa-brands fa-twitter"></i></a></li>
-                                        <li><a href="https://www.instagram.com/wowo_oe_aiyiy_/"><i
-                                                    class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="https://www.pixiv.net/users/10334046"><i class="fa-solid fa-p"
-                                                    style="    margin-left: 1.9px;"></i></a>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i>twitter</a></li>
+                                        <li><a href=""><i class="fa-brands fa-instagram"></i>instagram</a></li>
+                                        <li><a href=""><i class="fa-solid fa-p"
+                                                    style="    margin-left: 1.9px;"></i>pixiv</a></li>
+                                        <li><a href=""><i class="fa-solid fa-s"></i>skeb</a>
                                         </li>
-                                        <li><a href=""><i class="fa-solid fa-pen"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </nav>
+                    </div>
                 </label>
             </div>
         </div>
+
     </header>
-    <main>これから実装</main>
+
+    <main>
+        <!--<div class="gallery_space"> </div>-->
+
+        <div class="works_text">
+            <!--<h2>WORKS</h2>-->
+            <ul>
+                <li>All</li>
+                <li>Original</li>
+                <li>Skeb</li>
+                <li>Other</li>
+            </ul>
+        </div>
+
+
+        <div data-pswp>
+            <div class="grid">
+
+                <div class="grid-sizer"></div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.1 ①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/commission/2022.1 ①.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.10①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/commission/2022.10①.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.11①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/commission/2022.11①.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.1②.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.1③.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.2①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.2②.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.4①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.5①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.7①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.7②.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4681a.png" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.8①.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/2022.8②.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_2725.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_2748.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_2835.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_2870.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_2930.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_3017.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/IMG_4922.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/IMG_4396.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <div class="grid-item" id="sample">
+                    <a href="#figure"><img class="sample_img" src="images/commission/IMG_3256.PNG" alt=""></a>
+                    <figure id="figure">
+                        <a id="overlay" href="#overlay">
+                            <img src="images/IMG_4415.PNG" alt="" height="100%">
+                            <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
+                        </a>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script>
+            var grid = document.querySelector('.grid');
+
+            var msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+
+            imagesLoaded(grid).on('progress', function () {
+                //layout Masonry after each image loads
+                msnry.layout();
+            });
+        </script>
+
+        <script charset="utf-8">
+            photoswipeSimplify.init();
+        </script>
+
+    </main>
 </body>
 
 </html>

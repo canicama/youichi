@@ -1,0 +1,34 @@
+.parallax_box {
+    perspective: 1px;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+
+.parallax_content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 400px 0;
+}
+
+.parallax_front {
+    -webkit-transform: translateZ(5px);
+    transform: translateZ(5px);
+}
+
+.parallax_back {
+    -webkit-transform: translateZ(-10px) scale(5);
+    transform: translateZ(-10px) scale(5);
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

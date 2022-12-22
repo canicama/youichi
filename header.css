@@ -1,0 +1,28 @@
+/* title */
+.title {
+    position: fixed;
+    z-index: 11;
+    top: 80px;
+    left: 90px;
+    width: 140px;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    border: solid 1px rgb(150, 150, 150);
+    float: left;
+    border-radius: 40px;
+    margin-right: 1em;
+}
+
+.title_text p {
+    margin-top: 0.2em;
+    letter-spacing: 0.1em;
+}
