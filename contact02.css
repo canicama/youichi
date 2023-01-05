@@ -1,0 +1,146 @@
+html,
+body {
+    font-family: 'Cormorant', serif;
+    background-color: rgb(243, 243, 243);
+}
+
+
+/* main */
+.contact-wrap {
+    position: absolute;
+    top: 10%;
+    padding: 10%;
+    width: 80%;
+}
+
+.contact-mail a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0;
+    display: block;
+    margin: 1em 0;
+    font-size: 1.3em;
+}
+
+.contact-mail a i {
+    margin-right: 0.5em;
+    color: rgb(137, 137, 137);
+}
+
+.contact_form_attention span::before {
+    content: "●";
+    color: rgb(115, 115, 115);
+    font-size: 1em;
+    position: relative;
+    top: 0em;
+}
+
+.contact_form_attention {
+    margin: 2em 0;
+}
+
+.contact_form_attention span {
+    font-size: 0.7em;
+    margin: 2em 0;
+    display: block;
+}
+
+.form-wrap {
+    margin: 3em 0;
+}
+
+input,
+textarea {
+    width: 100%;
+    border: none;
+    background-color: rgb(243, 243, 243);
+}
+
+textarea {
+    height: 10em;
+}
+
+::placeholder {
+    color: rgb(197, 197, 197);
+    font-size: 0.8em;
+    display: block;
+}
+
+.form-text {
+    padding: 0.5em 0;
+}
+
+#form-list::after {
+    display: block;
+    content: '';
+    background: #d9d9d9;
+    width: 100%;
+    height: 1px;
+}
+
+#form-list {
+    margin: 3em 0;
+}
+
+.required::after {
+    content: "●";
+    color: rgb(115, 115, 115);
+    font-size: 0.9em;
+    position: relative;
+    top: -0.3em;
+    margin-left: 0.4em;
+}
+
+#form-button {
+    width: 100%;
+    /* height: 4em; */
+    border: 1px solid rgb(202, 202, 202);
+    color: rgb(59, 59, 59);
+    font-size: 1em;
+    letter-spacing: 1em;
+    box-sizing: border-box;
+    padding: 1em 0;
+    /* border-radius: 9px; */
+    /* margin: 0 2em; */
+}
+
+#form-button:hover {
+    width: 100%;
+    /* height: 4em; */
+    background: rgb(190, 190, 190);
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    letter-spacing: 1em;
+    box-sizing: border-box;
+    /* border-radius: 9px; */
+    padding: 1em 0;
+    animation: form_button_hover .8s;
+}
+
+@keyframes form_button_hover {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.form-button input {
+    margin: 1em 0;
+    border: 1px black;
+}
+
+.entries ul {
+    padding: 0em;
+}
+
+.entries ul li {
+    margin: 0.5em 0;
+    list-style: none;
+}
+
+.entries ul li span {
+    margin-right: 0.5em;
+}
