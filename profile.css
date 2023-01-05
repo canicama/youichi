@@ -85,7 +85,7 @@ body {
 }
 */
 
-.ptofile-text-top-line {
+.profile-text-top-line {
     width: 100vw;
     height: 1px;
     background-color: rgb(175, 186, 194);
@@ -200,4 +200,41 @@ h3 {
 .profile-credit a {
     text-decoration: none;
     color: black;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-img {
+        width: 30%;
+        margin: 0;
+        left: 10%;
+        height: 70%;
+        top: 20%;
+        bottom: 0;
+    }
+
+    .profile-text-top-line,
+    .profile-text-top02,
+    .profile-text-job {
+        display: none;
+    }
+
+    .profile-text {
+        width: 60%;
+        right: 0;
+        top: 3%;
+        height: 110%;
+    }
+
+    .profile-Introduction span {
+        font-size: 1em;
+    }
+
+    .profile-Introduction dt p {
+        font-size: 1.5em;
+    }
+
+    .profile-Introduction dd p,
+    .profile-link-item {
+        font-size: 1em;
+    }
 }
