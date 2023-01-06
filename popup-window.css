@@ -7,6 +7,8 @@ body,
 html {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .popup-img {
@@ -45,13 +47,26 @@ html {
 
 .Visit {
     position: fixed;
-    bottom: 5vh;
+    bottom: 3vh;
     font-size: 0.9em;
+    width: 100px;
+    height: 100px;
+    border: solid 0.5px rgb(163, 163, 163);
+    border-radius: 50%;
 }
 
 .Visit a {
     text-decoration: none;
-    color: black;
+    color: rgb(163, 163, 163);
+    position: relative;
+    top: 40%;
+    /* bottom: 0; */
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    font-weight: 100;
+    font-size: 1.5em;
 }
 
 .Prev-Next {
@@ -61,10 +76,16 @@ html {
     display: flex;
 }
 
+.Back,
+.Visit,
+.Prev-Next {
+    color: rgb(92, 92, 92);
+}
+
 .P-Nline {
     height: 1px;
     width: 3em;
-    background-color: black;
+    background-color: rgb(205, 205, 205);
     position: relative;
     top: 0.8em;
     margin: 0 1em;
@@ -80,7 +101,7 @@ html {
 }
 
 .item {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
