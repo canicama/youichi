@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.popup-img {
+    width: 80vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 100;
+}
+
+.popup-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imgB {
+    width: initial;
+}
+
+.popup-text {
+    position: absolute;
+    z-index: 1000;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.Back {
+    position: fixed;
+    top: 5vh;
+}
+
+.Visit {
+    position: fixed;
+    bottom: 5vh;
+    font-size: 0.9em;
+}
+
+.Visit a {
+    text-decoration: none;
+    color: black;
+}
+
+.Prev-Next {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    display: flex;
+}
+
+.P-Nline {
+    height: 1px;
+    width: 3em;
+    background-color: black;
+    position: relative;
+    top: 0.8em;
+    margin: 0 1em;
+}
+
+/* 縦スワイプ横スクロール　コピペ */
+.area {
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+}
+
+.item {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.5em;
+}
+
+.item01 {
+    background: #e94d15;
+}
+
+.item02 {
+    background: #f18d1d;
+}
+
+.item03 {
+    background: #f8b633;
+}
+
+
+.item05 {
+    box-sizing: border-box;
+}
+
+.item06 {
+    background: #3d6b35;
+}
