@@ -51,10 +51,10 @@ html {
 
 .Close {
     position: fixed;
-    top: 5%;
+    top: 7%;
     left: 10%;
     color: #a0a0a0;
-    font-size: 0.5em;
+    font-size: 0.8em;
     /* font-weight: 500; */
     letter-spacing: 0.1em;
 }
@@ -62,11 +62,12 @@ html {
 .cross {
     position: relative;
     display: inline-block;
-    width: 10px;
+    width: 20px;
     height: 1px;
     transform: rotate(45deg);
     vertical-align: middle;
     margin-right: 0.5em;
+    top: -0.1em;
 }
 
 .cross::before {
