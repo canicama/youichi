@@ -25,6 +25,10 @@ html {
     object-fit: contain;
 }
 
+.imgB {
+    width: initial;
+}
+
 .popup-text {
     position: absolute;
     z-index: 1000;
@@ -35,7 +39,7 @@ html {
 }
 
 .Back {
-    position: relative;
+    position: fixed;
     top: 5vh;
 }
 
@@ -64,4 +68,46 @@ html {
     position: relative;
     top: 0.8em;
     margin: 0 1em;
+}
+
+/* 縦スワイプ横スクロール　コピペ */
+.area {
+    overflow: hidden;
+}
+
+.wrap {
+    display: flex;
+}
+
+.item {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.5em;
+}
+
+.item01 {
+    background: #e94d15;
+}
+
+.item02 {
+    background: #f18d1d;
+}
+
+.item03 {
+    background: #f8b633;
+}
+
+
+.item05 {
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+.item06 {
+    background: #3d6b35;
 }
