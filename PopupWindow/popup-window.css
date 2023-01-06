@@ -9,7 +9,7 @@ html {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background: linear-gradient(120deg, #f6f7fc, #c6d2db);
+    background: linear-gradient(120deg, #f3f3f3, #d8d8d8);
     /* #f6f7fc,
         #c6d2db*/
     width: 100vw;
@@ -41,27 +41,56 @@ html {
     position: absolute;
     z-index: 1000;
     width: 90%;
+    height: 100vh;
     left: 0;
     right: 0;
     margin: auto;
+    padding: 10% 5%;
+    box-sizing: border-box;
 }
 
 .Close {
     position: fixed;
-    top: 5vh;
-    color: #7b848b;
+    top: 8%;
+    left: 10%;
+    color: #d8d8d8;
     font-size: 0.8em;
-    font-weight: 500;
+    /* font-weight: 500; */
+}
+
+.cross {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    transform: rotate(45deg);
+    vertical-align: middle;
+}
+
+.cross::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+.cross,
+.cross::before {
+    background: #a0a0a0;
 }
 
 .Visit {
     position: fixed;
-    bottom: 3vh;
+    bottom: 4%;
     font-size: 0.9em;
     width: 100px;
     height: 100px;
     border: solid 0.5px #ffffff;
     border-radius: 50%;
+    left: 10%;
 }
 
 .Visit a {
@@ -81,8 +110,8 @@ html {
 .popup-attention {
     width: 99px;
     position: fixed;
-    right: 3vw;
-    bottom: 19vh;
+    right: 4%;
+    bottom: 30%;
     font-size: 0.5em;
     line-height: 1.5rem;
     color: rgb(255, 255, 255);
@@ -90,8 +119,8 @@ html {
 
 .Prev-Next {
     position: fixed;
-    bottom: 5vh;
-    right: 5vw;
+    bottom: 5%;
+    right: 10%;
     display: flex;
     font-weight: 500;
 }
