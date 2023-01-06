@@ -32,7 +32,7 @@ body {
     right: 0;
     margin: auto;
     font-family: 'Marcellus', serif;
-    border-top: 1px solid rgb(193, 193, 193);
+    /* border-top: 1px solid rgb(193, 193, 193); */
     border-bottom: 1px solid rgb(193, 193, 193);
 }
 
@@ -69,7 +69,7 @@ body {
 
 .works-list {
     position: absolute;
-    top: 27vh;
+    top: 27.5vh;
     left: 0;
     right: 0;
     margin: auto;
@@ -85,6 +85,13 @@ body {
     display: contents;
 }
 
+.works-list-border {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    ;
+}
+
 .works-list-li {
     width: 100%;
     height: 7vh;
@@ -92,8 +99,9 @@ body {
 
 .works-list ul li a {
     text-decoration: none;
-    margin: 2.5em 0;
+    margin: 4em 0;
     display: block;
+    border-bottom: 1px solid rgb(193, 193, 193);
 }
 
 .works-img {
