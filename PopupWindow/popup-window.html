@@ -12,14 +12,24 @@
     <!--　縦スワイプ横スクロール　GSAP(JSライブラリ)　-->
     <script src="umd/gsap.js"></script>
     <script src="umd/ScrollTrigger.js"></script>
+    <!--google fonts Roboto-100,400-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="popup-text">
-        <div class="Back">Back</div>
-        <div class="Visit"><a
-                href="https://twitter.com/wowo_oe_aiyiy_/status/1576194715007217665?s=20&t=eKaATsMQlcvYuylYxxbDwQ">Visit
-                Page</a></div>
+        <div class="Close">Close</div>
+        <div class="Visit">
+            <a href="https://twitter.com/wowo_oe_aiyiy_/status/1576194715007217665?s=20&t=eKaATsMQlcvYuylYxxbDwQ">
+                Visit Page
+            </a>
+        </div>
+        <div class="popup-attention">
+            <p>作品の転載、複製、改変等は禁止します。</p>
+            <p>Reproduction is prohibited.</p>
+        </div>
         <div class="Prev-Next">
             <p>Prew</p>
             <div class="P-Nline"></div>
@@ -36,20 +46,15 @@
                                 class="imgA" src="2022.9無田虚様キービジュアル.PNG" alt="イラスト"></a>
                     </span>
                 </div>
-                <!--
+
                 <div class="item item05 js-item">
-                    <span>
-                        <a href="https://twitter.com/wowo_oe_aiyiy_/status/1576194715007217665?s=20&t=eKaATsMQlcvYuylYxxbDwQ"><img class="imgB" src="2022.9無田虚様新衣装デザイン.PNG" alt="イラスト"></a>
-                    </span>
-                </div>
-                -->
-                <div class="item item04 js-item">
                     <span>
                         <a
                             href="https://twitter.com/wowo_oe_aiyiy_/status/1576194715007217665?s=20&t=eKaATsMQlcvYuylYxxbDwQ"><img
-                                class="imgA" src="2022.9無田虚様キービジュアル.PNG" alt="イラスト"></a>
+                                class="imgB" src="2022.9無田虚様新衣装デザイン.PNG" alt="イラスト"></a>
                     </span>
                 </div>
+
                 <div class="item item04 js-item">
                     <span>
                         <a
@@ -79,7 +84,7 @@
             gsap.set(items, { width: 100 / num + "%" });
 
             gsap.to(items, {
-                xPercent: -100 * (num - 1), //x方向に移動させる
+                xPercent: -100 * (num + 1), //x方向に移動させる
                 ease: "none",
                 scrollTrigger: {
                     trigger: area, //トリガー
