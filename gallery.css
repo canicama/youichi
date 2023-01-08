@@ -39,7 +39,7 @@ body {
 /* category */
 .category {
     position: absolute;
-    top: 12%;
+    top: 13%;
     float: left;
     width: 80%;
     height: 2em;
@@ -50,15 +50,15 @@ body {
 }
 
 .category ul {
-    padding: 0;
+    padding: 0 0.5em;
     display: flex;
     flex-wrap: wrap;
 }
 
 .category ul li {
     list-style: none;
-    font-size: 0.8em;
-    margin-right: 2em;
+    font-size: 0.7em;
+    margin-right: 2.5em;
     color: rgb(174, 174, 174);
 }
 
