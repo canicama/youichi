@@ -67,13 +67,167 @@ body {
 }
 
 .scroll {
-    position: absolute;
-    bottom: 30%;
+    position: fixed;
     right: 0;
     left: 0;
-    /* margin: auto; */
     text-align: center;
+    bottom: 10%;
+    z-index: 500;
+    color: black;
 }
+
+/* .circle */
+.circle-text {
+    position: relative;
+    width: 73%;
+    height: 3em;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0;
+    transform: rotate(-80deg);
+    z-index: 1000;
+}
+
+.circle-text span {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 10px);
+    /* 中心点、、文字サイズ分ずらす */
+    display: inline-block;
+    width: 50px;
+    /* 文字サイズより小さくしない */
+    height: 6em;
+    /* 半径 */
+    transform-origin: center bottom;
+    /* 回転の基準点 */
+    /*  border: solid 1px; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.7em;
+    color: rgb(0, 0, 0);
+}
+
+
+.circle-text span:nth-child(1) {
+    transform: rotate(0deg);
+}
+
+.circle-text span:nth-child(2) {
+    transform: rotate(13.3deg);
+}
+
+.circle-text span:nth-child(3) {
+    transform: rotate(26.7deg);
+}
+
+.circle-text span:nth-child(4) {
+    transform: rotate(40deg);
+}
+
+.circle-text span:nth-child(5) {
+    transform: rotate(53.3deg);
+}
+
+.circle-text span:nth-child(6) {
+    transform: rotate(66.6deg);
+}
+
+.circle-text span:nth-child(7) {
+    transform: rotate(80deg);
+}
+
+.circle-text span:nth-child(8) {
+    transform: rotate(93.3deg);
+}
+
+.circle-text span:nth-child(9) {
+    transform: rotate(106.6deg);
+}
+
+.circle-text span:nth-child(10) {
+    transform: rotate(120deg);
+}
+
+.circle-text span:nth-child(11) {
+    transform: rotate(133.3deg);
+}
+
+.circle-text span:nth-child(12) {
+    transform: rotate(146.6deg);
+}
+
+.circle-text span:nth-child(13) {
+    transform: rotate(160deg);
+}
+
+.circle-text span:nth-child(14) {
+    transform: rotate(173.3deg);
+}
+
+.circle-text span:nth-child(15) {
+    transform: rotate(186.6deg);
+}
+
+.circle-text span:nth-child(16) {
+    transform: rotate(200deg);
+}
+
+.circle-text span:nth-child(17) {
+    transform: rotate(213.3deg);
+}
+
+.circle-text span:nth-child(18) {
+    transform: rotate(226.6deg);
+}
+
+.circle-text span:nth-child(19) {
+    transform: rotate(240deg);
+}
+
+.circle-text span:nth-child(20) {
+    transform: rotate(253.3deg);
+}
+
+.circle-text span:nth-child(21) {
+    transform: rotate(266.6deg);
+}
+
+.circle-text span:nth-child(22) {
+    transform: rotate(280deg);
+}
+
+.circle-text span:nth-child(23) {
+    transform: rotate(293.3deg);
+}
+
+.circle-text span:nth-child(24) {
+    transform: rotate(306.6deg);
+}
+
+.circle-text span:nth-child(25) {
+    transform: rotate(320deg);
+}
+
+.circle-text span:nth-child(26) {
+    transform: rotate(333.3deg);
+}
+
+.circle-text span:nth-child(27) {
+    transform: rotate(346.6deg);
+}
+
+.scroll-arrow {
+    position: fixed;
+    left: 0%;
+    right: 0;
+    margin: auto;
+    bottom: 12%;
+    font-size: 2.5em;
+    color: rgb(131, 131, 131);
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*  profile */
 
 .profile {
     position: absolute;
