@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div class="background"></div>
     <div class="popup-text">
         <div class="Close">
             <span class="cross"></span>
@@ -34,7 +35,7 @@
             <p>Reproduction is prohibited.</p>
         </div>
         <div class="Prev-Next">
-            <p>Prew</p>
+            <p>Prev</p>
             <div class="P-Nline"></div>
             <p>Next</p>
         </div>
@@ -58,7 +59,7 @@
                     </span>
                 </div>
 
-                <div class="item item04 js-item">
+                <div class="item item06 js-item">
                     <span>
                         <a
                             href="https://twitter.com/wowo_oe_aiyiy_/status/1576194715007217665?s=20&t=eKaATsMQlcvYuylYxxbDwQ"><img
@@ -87,7 +88,7 @@
             gsap.set(items, { width: 100 / num + "%" });
 
             gsap.to(items, {
-                xPercent: -100 * (num + 1), //x方向に移動させる
+                xPercent: -60 * (num + 1), //x方向に移動させる -100を60に調整
                 ease: "none",
                 scrollTrigger: {
                     trigger: area, //トリガー
