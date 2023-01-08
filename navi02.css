@@ -149,7 +149,7 @@ header {
 
 .navi-mail a {
     text-decoration: none;
-    color: black;
+    color: rgb(116, 116, 116);
     display: block;
     margin-top: 1em;
     padding: 0.5em 0;
@@ -358,6 +358,9 @@ h1 {
     font-size: 0.7em;
     letter-spacing: 0.1em;
     margin-top: 3rem;
+    position: fixed;
+    bottom: 2.5em;
+    left: 3em;
 }
 
 .navi-hide-bottom {
