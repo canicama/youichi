@@ -17,25 +17,26 @@ body {
     top: 10%;
     padding: 10%;
     width: 80%;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
 }
 
 .contact-mail a {
     text-decoration: none;
     color: black;
-    padding: 0.5em 0;
+    padding: 1em;
     display: block;
     margin: 3em 0;
     border: 1px solid rgb(199, 199, 199);
-    padding: 0.5em 1em;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
     letter-spacing: 0.05em;
-    width: 17em;
+    width: 90%;
 }
 
 .contact-mail a i {
-    margin-right: 1em;
-    font-size: 0.8em;
+    margin: 0 1em;
+    font-size: 1em;
     color: rgb(68, 68, 68);
 }
 
