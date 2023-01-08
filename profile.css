@@ -1,8 +1,8 @@
 html,
 body {
-    font-family: 'Cormorant', serif;
+
     background-color: rgb(236, 236, 236);
-    /* font-family: 'Roboto Condensed', sans-serif; */
+
 }
 
 
@@ -239,6 +239,7 @@ body {
     width: 100%;
     height: 110%;
     z-index: 500;
+    font-family: 'BIZ UDPGothic', sans-serif;
 }
 
 .profile-img {
@@ -326,7 +327,7 @@ body {
 
 .profile-Introduction span {
     color: rgb(87, 87, 87);
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -373,6 +374,7 @@ h3 {
 .profile-social ul li {
     list-style: none;
     float: left;
+    font-size: 0.9em;
 }
 
 .profile-social ul span {
