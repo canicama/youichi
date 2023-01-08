@@ -19,7 +19,7 @@ body {
 }
 
 .top-title {
-    position: absolute;
+    position: fixed;
     right: 10%;
     bottom: 20%;
     left: 0;
