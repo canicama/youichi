@@ -2,7 +2,6 @@ html,
 body {
     font-family: 'Cormorant', serif;
     background-color: rgb(243, 243, 243);
-    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -31,7 +30,7 @@ body {
 }
 
 .contact-mail a i {
-    margin-right: 0.5em;
+    margin-right: 1em;
     font-size: 0.8em;
     color: rgb(68, 68, 68);
 }
