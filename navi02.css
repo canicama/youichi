@@ -2,11 +2,9 @@ html,
 body {
     margin: 0;
     padding: 0;
+
 }
 
-header {
-    font-family: 'Cormorant', serif;
-}
 
 /* grid.css */
 
@@ -250,6 +248,7 @@ header {
     height: 10%;
     color: rgb(0, 0, 0);
     z-index: 1000;
+    font-family: 'Cormorant', serif;
 }
 
 #header {
@@ -258,6 +257,7 @@ header {
     height: 40%;
     display: flex;
     padding: 5vh 10%;
+    font-family: 'Cormorant', serif;
 }
 
 #logo {

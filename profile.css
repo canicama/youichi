@@ -239,7 +239,7 @@ body {
     width: 100%;
     height: 110%;
     z-index: 500;
-    font-family: 'BIZ UDPGothic', sans-serif;
+    font-family: 'Noto Serif JP', serif;
 }
 
 .profile-img {
@@ -260,6 +260,9 @@ body {
     object-fit: cover;
 }
 
+.profile-link a {
+    font-family: 'Playfair Display', serif;
+}
 
 /* blur 
 .blurAnime.visible {
@@ -328,12 +331,12 @@ body {
 .profile-Introduction span {
     color: rgb(87, 87, 87);
     font-size: 0.9em;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .profile-Introduction dt p {
-    font-size: 1.1em;
-    margin-bottom: 2em;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
     display: block;
 }
 
@@ -362,8 +365,8 @@ body {
 h3 {
     font-size: 1em;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
 }
 
 .profile-mail a {

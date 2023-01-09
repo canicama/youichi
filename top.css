@@ -1,5 +1,4 @@
 body {
-    font-family: 'Cormorant', serif;
     background-color: rgb(255, 255, 255);
 }
 
@@ -13,7 +12,7 @@ body {
 .top {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -27,6 +26,7 @@ body {
     width: 70%;
     color: rgb(0, 0, 0);
     z-index: 20;
+    font-family: 'Cormorant', serif;
 }
 
 .top-title p {
@@ -61,7 +61,7 @@ body {
 footer {
     position: absolute;
     bottom: 2.3em;
-    left: 2.3em;
+    left: 11%;
 }
 
 /* footer */
