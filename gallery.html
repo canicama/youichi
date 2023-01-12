@@ -32,6 +32,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 
+    <!--js-->
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -309,7 +312,7 @@
                 percentPosition: true
             });
 
-            imagesLoaded(grid).on('progress', function () {
+            imagesLoaded(grid).on('done', function () {
                 //layout Masonry after each image loads
                 msnry.layout();
             });
