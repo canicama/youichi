@@ -127,11 +127,9 @@ body {
 }
 
 .navi-box {
-    width: 80vw;
-    /* height: 80vh; */
     margin: auto;
     position: absolute;
-    left: 0;
+    left: 11%;
     right: 0;
     top: 25vh;
 }
@@ -360,7 +358,6 @@ h1 {
     margin-top: 3rem;
     position: fixed;
     bottom: 2.5em;
-    left: 3em;
 }
 
 .navi-hide-bottom {
@@ -383,5 +380,9 @@ h1 {
         top: 4vh;
         z-index: 1000;
         font-size: 1em;
+    }
+
+    .navi-copyright {
+        left: 11%;
     }
 }
