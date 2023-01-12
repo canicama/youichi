@@ -128,7 +128,7 @@
                     <a href="#figure"><img class="sample_img" src="images/gallery/skeb/skeb_ 2022.12_1s.PNG" alt=""></a>
                     <figure id="figure">
                         <a id="overlay" href="#overlay">
-                            <img src="images/gallery/skeb/skeb_ 2022.12_1.PNG" alt="" height="100%">
+                            <img src="images/gallery/skeb/skeb_ 2022.1_1.PNG" alt="" height="100%">
                             <figcaption>どこかをクリックするとモーダルウィンドウを閉じます</figcaption>
                         </a>
                     </figure>
@@ -304,18 +304,17 @@
 
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <script>
-            $(function () {
-                var $grid = $('.grid');
+            var grid = document.querySelector('.grid');
 
-                $grid.imagesLoaded(function () {
-                    var msnry = new Masonry($grid, {
-                        itemSelector: '.grid-item',
-                        columnWidth: '.grid-sizer',
-                        percentPosition: true
-                    });
-                    msnry.layout();
+            var msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
 
-                });
+            imagesLoaded(grid).on('progress', function () {
+                //layout Masonry after each image loads
+                msnry.layout();
             });
         </script>
 
